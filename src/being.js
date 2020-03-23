@@ -1,4 +1,15 @@
 class Being {
-}
+  constructor(name, species, credits) {
+    this.isAlive = true;
+    this.name = name;
+    this.species = species;
+    this.credits = 0;
+  }
+  updateCredits(credits) {
+    this.credits = (this.credits + credits || this.credits - credits);
+    return credits;
+
+  }
+};
 
 module.exports = Being;
