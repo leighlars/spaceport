@@ -271,7 +271,7 @@ describe('Ship', function() {
     assert.deepEqual(fighter.cargo, [partCargo]);
   })
 
-  it.skip('has an empty parts list by default', function() {
+  it('has an empty parts list by default', function() {
     var fighter = new Ship(
       {
         name: 'Atlantis',
@@ -302,7 +302,7 @@ describe('Ship', function() {
     assert.deepEqual(fighter.parts, parts);
   })
 
-  it.skip('can add a new part', function() {
+  it('can add a new part', function() {
     var parts = {
       shell: new Part({ name: 'XC-Wing', type: 'shell', value: 8000 }),
       computer: new Part({ name: 'Starmapper', type: 'computer', value: 300 }),
